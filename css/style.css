@@ -1,3 +1,6 @@
+/* Import */
+/* @import 'swiper.css'; */
+
 /* Vars */
 :root {
   /* Dimentions */
@@ -314,9 +317,8 @@ img {
 
 .testimonials__slider {
   max-height: 526px;
-  padding: 20px;
   margin-top: 60px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .slider__item {
@@ -324,6 +326,7 @@ img {
   align-items: center;
   justify-content: space-between;
   column-gap: 20px;
+  padding: 20px;
 }
 
 .item-content {
@@ -369,7 +372,7 @@ img {
   top: -18px;
   right: -18px;
   z-index: -1;
-}
+} 
 
 .slider__item-photo-plus {
   left: -16px;
@@ -377,21 +380,21 @@ img {
 }
 
 .slider__item-photo img {
+  height: 491px;
   border-radius: 20px; 
   overflow: hidden;
 }
 
 .slider__arrows {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 72px;
   right: 0;
-  padding: 20px 0 0 30px;
-  border-radius: 16px 0px 0px 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 22px;
+  height: 78px;
+  width: 139px;
+  border-radius: 10px 0 0 0;
+  margin-left: auto;
   background-color: var(--light-color);
+  z-index: 10;
 }
 
 .slider__arrow {
@@ -409,6 +412,11 @@ img {
 .slider__arrow img {
   width: 4px;
   height: 9px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
 }
 
 /* Stories styles */
@@ -887,11 +895,6 @@ img {
     position: relative;
   }
 
-  .slider__arrows {
-    bottom: -130px;
-    right: 20px;
-  }
-
   .nav__title {
     margin-bottom: 15px;
   }
@@ -923,12 +926,6 @@ img {
 
   .testimonials__slider {
     margin-top: 40px;
-  }
-
-  .slider__arrows {
-    bottom: -158px;
-    right: -19px;
-    padding: 0;
   }
 
   .item-content__user-name {

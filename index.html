@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/swiper.css">
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <title>Explore and Travel</title>
@@ -170,9 +171,10 @@
       <section class="testimonials">
         <div class="container">
           <h2 class="title">Testimonials</h2>
-          <div class="slider">
-            <div class="testimonials__slider">
-              <div class="slider__item">
+          <div class="swiper">
+            <div class="swiper-wrapper testimonials__slider">
+              <!-- Slide 1 -->
+              <div class="swiper-slide slider__item">
                 <div class="slider__item-content item-content">
                   <div class="item-content__rating">
                     <img src="./img/testimonails/stars.png" alt="stars rating">
@@ -189,15 +191,35 @@
                   <img src="./img/testimonails/photo.jpg" alt="photo">
                   <span class="circle circle--big slider__item-photo-circle"></span>
                   <span class="plus plus--big slider__item-photo-plus"></span>
-                  <div class="slider__arrows">
-                    <div class="slider__arrow slider__arrow--prev">
-                      <img src="./img/testimonails/arrow-left-slider.svg" alt="arrow left">
-                    </div>
-                    <div class="slider__arrow slider__arrow--next">
-                      <img src="./img/testimonails/arrow-right-slider.svg" alt="arrow right">
-                    </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide slider__item">
+                <div class="slider__item-content item-content">
+                  <div class="item-content__rating">
+                    <img src="./img/testimonails/stars.png" alt="stars rating">
+                  </div>
+                  <div class="item-content__text">
+                    <blockquote>“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</blockquote>
+                  </div>
+                  <div class="item-content__user">
+                    <span class="item-content__user-name">Edward Newgate</span>
+                    <span class="item-content__user-position">Founder Circle</span>
                   </div>
                 </div>
+                <div class="slider__item-photo">
+                  <img src="./img/testimonails/photo-2.jpg" alt="photo">
+                  <span class="circle circle--big slider__item-photo-circle"></span>
+                  <span class="plus plus--big slider__item-photo-plus"></span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__arrows">
+              <div class="swiper-button-next slider__arrow">
+                <img src="./img/testimonails/arrow-right-slider.svg" alt="arrow right">
+              </div>
+              <div class="swiper-button-prev slider__arrow">
+                <img src="./img/testimonails/arrow-left-slider.svg" alt="arrow left">
               </div>
             </div>
           </div>
@@ -377,6 +399,9 @@
         </div>  
       </div>
     </footer>
-  </section>    
+  </section>  
+  
+  <script src="./js/swiper.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
