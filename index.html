@@ -16,25 +16,30 @@
         <a href="#" class="logo">
           <img class="logo__img" src="./img/logo.svg" alt="Explore and Travel">
         </a>
-        <nav class="menu">
-          <ul class="menu__body">
-            <li class="menu__list">
-              <a href="#" class="menu__link active">Home</a>
-            </li>  
-            <li class="menu__list">
-              <a href="#" class="menu__link">Destinations</a>
-            </li>
-            <li class="menu__list">
-              <a href="#" class="menu__link">About</a>
-            </li>
-            <li class="menu__list">
-              <a href="#" class="menu__link">Partner</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__buttons">
-          <button href="#" class="button button--empty">Login</button>
-          <button href="#" class="button">Register</button>
+        <div class="header__menu">
+          <nav class="menu">
+            <ul class="menu__body">
+              <li class="menu__list">
+                <a data-goto=".hero" href="#" class="menu__link active">Home</a>
+              </li>  
+              <li class="menu__list">
+                <a data-goto=".destinations" href="#" class="menu__link">Destinations</a>
+              </li>
+              <li class="menu__list">
+                <a data-goto=".guide" href="#" class="menu__link">About</a>
+              </li>
+              <li class="menu__list">
+                <a data-goto=".testimonials" href="#" class="menu__link">Partner</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__buttons">
+            <button href="#" class="button button--empty">Login</button>
+            <button href="#" class="button">Register</button>
+          </div>
+        </div>
+        <div class="header__icon">
+          <span></span>
         </div>
       </div>
     </header>
@@ -104,11 +109,11 @@
         <div class="container">
           <div class="section__header">
             <h2 class="title">Featured destinations</h2>
-            <a href="#" class="section__view">View all</a>
+            <a href="#!" class="section__view">View all</a>
             <span class="circle section__header-circle"></span>
           </div>
           <div class="destinations__content">
-            <a href="#" class="destinations__content-item destinations-item">
+            <a href="#!" class="destinations__content-item destinations-item">
               <div class="destinations-item__image">
                 <img src="./img/destinations/01.jpg" alt="Raja Ampat">
               </div>
@@ -117,7 +122,7 @@
                 <span class="destinations-item__country">Indonesia</span>
               </div>
             </a>
-            <a href="#" class="destinations__content-item destinations-item">
+            <a href="#!" class="destinations__content-item destinations-item">
               <div class="destinations-item__image">
                 <img src="./img/destinations/02.jpg" alt="Fanjingshan">
               </div>
@@ -126,7 +131,7 @@
                 <span class="destinations-item__country">China</span>
               </div>
             </a>
-            <a href="#" class="destinations__content-item destinations-item">
+            <a href="#!" class="destinations__content-item destinations-item">
               <div class="destinations-item__image">
                 <img src="./img/destinations/03.jpg" alt="Vevey">
               </div>
@@ -135,7 +140,7 @@
                 <span class="destinations-item__country">Switzerland</span>
               </div>
             </a>
-            <a href="#" class="destinations__content-item destinations-item">
+            <a href="#!" class="destinations__content-item destinations-item">
               <div class="destinations-item__image">
                 <img src="./img/destinations/04.jpg" alt="Raja Ampat">
               </div>
@@ -171,7 +176,7 @@
       <section class="testimonials">
         <div class="container">
           <h2 class="title">Testimonials</h2>
-          <div class="swiper">
+          <div class="swiper swiper-testimonials">
             <div class="swiper-wrapper testimonials__slider">
               <!-- Slide 1 -->
               <div class="swiper-slide slider__item">
@@ -215,10 +220,10 @@
               </div>
             </div>
             <div class="slider__arrows">
-              <div class="swiper-button-next slider__arrow">
+              <div class="swiper-button-next slider__arrow testimonials-button-next">
                 <img src="./img/testimonails/arrow-right-slider.svg" alt="arrow right">
               </div>
-              <div class="swiper-button-prev slider__arrow">
+              <div class="swiper-button-prev slider__arrow testimonials-button-prev">
                 <img src="./img/testimonails/arrow-left-slider.svg" alt="arrow left">
               </div>
             </div>
@@ -230,7 +235,7 @@
         <div class="container">
           <div class="section__header">
             <h2 class="title">Trending stories</h2>
-            <a href="#" class="section__view">View all</a>
+            <a href="#!" class="section__view">View all</a>
             <span class="plus section__header-plus"></span>
           </div>
           <div class="stories__content">
@@ -247,7 +252,7 @@
                     tohelp maximise your health and happines...</p>
                 </div>
               </div>
-              <a href="#" class="story-item__link">Read more</a>
+              <a href="#!" class="story-item__link">Read more</a>
             </div>
             <div class="stories__content-item story-item">
               <div class="story-item__image">
@@ -262,7 +267,7 @@
                     to visit...</p>
                 </div>
               </div>
-              <a href="#" class="story-item__link">Read more</a>
+              <a href="#!" class="story-item__link">Read more</a>
             </div>
             <div class="stories__content-item story-item">
               <div class="story-item__image">
@@ -277,7 +282,7 @@
                     tohelp maximise your health and happines...</p>
                 </div>
               </div>
-              <a href="#" class="story-item__link">Read more</a>
+              <a href="#!" class="story-item__link">Read more</a>
             </div>
             <div class="stories__content-item story-item">
               <div class="story-item__image">
@@ -293,7 +298,7 @@
                     is: it's never too late...</p>
                 </div>
               </div>
-              <a href="#" class="story-item__link">Read more</a>
+              <a href="#!" class="story-item__link">Read more</a>
             </div>
             <span class="circle stories__content-circle-1"></span>
             <span class="circle stories__content-circle-2"></span>
@@ -305,7 +310,7 @@
       <div class="container footer__container">
         <div class="footer__row">
           <div class="footer__content">
-            <a class="logo">
+            <a href="#" class="logo">
               <img src="./img/logo.svg" alt="Explore and Travel">
             </a>
             <div class="footer__text">
@@ -322,19 +327,19 @@
               <h3 class="nav__title">Destinations</h3>
               <ul class="nav__body">
                 <li class="nav__item">
-                  <a href="" class="nav__link">Africa</a>
+                  <a href="#!" class="nav__link">Africa</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Antarctica</a>
+                  <a href="#!" class="nav__link">Antarctica</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Asia</a>
+                  <a href="#!" class="nav__link">Asia</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Europe</a>
+                  <a href="#!" class="nav__link">Europe</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">America</a>
+                  <a href="#!" class="nav__link">America</a>
                 </li>
               </ul>
             </div>
@@ -342,19 +347,19 @@
               <h3 class="nav__title">Shop</h3>
               <ul class="nav__body">
                 <li class="nav__item">
-                  <a href="" class="nav__link">Destination Guides</a>
+                  <a href="#!" class="nav__link">Destination Guides</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Pictorial & Gifts</a>
+                  <a href="#!" class="nav__link">Pictorial & Gifts</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Special Offers</a>
+                  <a href="#!" class="nav__link">Special Offers</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Delivery Times</a>
+                  <a href="#!" class="nav__link">Delivery Times</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">FAQs</a>
+                  <a href="#!" class="nav__link">FAQs</a>
                 </li>
               </ul>
             </div>
@@ -362,41 +367,41 @@
               <h3 class="nav__title">Interests</h3>
               <ul class="nav__body">
                 <li class="nav__item">
-                  <a href="" class="nav__link">Adventure Travel</a>
+                  <a href="#!" class="nav__link">Adventure Travel</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Art And Culture</a>
+                  <a href="#!" class="nav__link">Art And Culture</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Wildlife And Nature</a>
+                  <a href="#!" class="nav__link">Wildlife And Nature</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Family Holidays</a>
+                  <a href="#!" class="nav__link">Family Holidays</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Food And Drink</a>
+                  <a href="#!" class="nav__link">Food And Drink</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div class="footer__socials">
-          <a href="#" class="footer__socials-item">
+          <a href="#!" class="footer__socials-item">
             <img src="./img/footer/twitter.svg" alt="twitter">
           </a>
-          <a href="#" class="footer__socials-item">
+          <a href="#!" class="footer__socials-item">
             <img src="./img/footer/facebook.svg" alt="facebook">
           </a>
-          <a href="#" class="footer__socials-item">
+          <a href="#!" class="footer__socials-item">
             <img src="./img/footer/instagram.svg" alt="instagram">
           </a>
-          <a href="#" class="footer__socials-item">
+          <a href="#!" class="footer__socials-item">
             <img src="./img/footer/linkedin.svg" alt="linkedin">
           </a>
-          <a href="#" class="footer__socials-item">
+          <a href="#!" class="footer__socials-item">
             <img src="./img/footer/youtube.svg" alt="youtube">
           </a>
-        </div>  
+        </div>
       </div>
     </footer>
   </section>  
