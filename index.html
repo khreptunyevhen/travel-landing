@@ -10,7 +10,7 @@
   <title>Explore and Travel</title>
 </head>
 <body>
-  <section class="wrapper">
+  <main class="wrapper">
     <header class="header">
       <div class="container header__container">
         <a href="#" class="logo">
@@ -34,22 +34,66 @@
             </ul>
           </nav>
           <div class="header__buttons">
-            <button href="#" class="button button--empty">Login</button>
-            <button href="#" class="button">Register</button>
+            <button class="button button--empty" data-modal-open="login">Login</button>
+            <button class="button header__register" data-modal-open="register">Register</button>
           </div>
         </div>
+        <!-- Burger -->
         <div class="header__icon">
           <span></span>
         </div>
       </div>
+      <!-- Modal login -->
+      <div class="modal" data-modal="login">
+        <div class="modal__bg">
+          <form action="#" class="modal-form">
+            <h2 class="modal-form__title">Login</h2>
+            <div class="modal-form__body">
+              <label class="modal-form__label" for="user-name">Name</label>
+              <input class="modal-form__input" type="text" name="user-name" placeholder="">
+              <label class="modal-form__label" for="password">Password</label>
+              <input class="modal-form__input" type="password" name="password" placeholder="">
+              <a class="button modal-form__link" href="#!">Log in</a>
+              <div class="modal-form__forgot">
+                <a href="#">Forgot your password?</a>
+              </div>
+            </div>
+            <div class="modal-form__close">
+              <img src="./img/close.svg" alt="close">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Modal register -->
+      <div class="modal" data-modal="register">
+        <div class="modal__bg">
+          <form action="#" class="modal-form">
+            <h2 class="modal-form__title">Register</h2>
+            <div class="modal-form__body">
+              <label class="modal-form__label" for="user-name">Name</label>
+              <input class="modal-form__input" type="text" name="user-name" placeholder="">
+              <label class="modal-form__label" for="user-name">Email</label>
+              <input class="modal-form__input" type="text" name="user-name" placeholder="">
+              <label class="modal-form__label" for="password">Password</label>
+              <input class="modal-form__input" type="password" name="password" placeholder="">
+              <label class="modal-form__label" for="password">Confirm Password</label>
+              <input class="modal-form__input" type="password" name="password" placeholder="">
+              <a class="button modal-form__link" href="#!">Register</a>
+            </div>
+            <div class="modal-form__close">
+              <img src="./img/close.svg" alt="close">
+            </div>
+          </form>
+        </div>
+      </div>
     </header>
-    <main class="main">
+    <section class="main">
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__description">
             <h1 class="hero__title">Explore and
               Travel<span class="plus hero__title-plus plus--rotate"></span></h1>
-            <form action="#" class="form">
+            <form action="#!" class="form">
               <h2 class="form__title">Holiday finder</h2>
               <div class="form__body">
                 <select class="form__select" name="location">
@@ -77,7 +121,7 @@
                   <option value="3">21-30 of the month</option>
                 </select>
               </div>
-              <input class="button form__button" type="submit" value="Explore">
+              <input data-modal-open="learn-more" class="button form__button" type="submit" value="Explore">
             </form>
           </div>
           <div class="hero__image">
@@ -101,7 +145,7 @@
                 trip, but now, they can also let Lonely Planet Experiences lead the way</p>
                 <span class="circle way__circle"></span>
             </div>
-            <a href="#" class="button">Learn more</a>
+            <a href="#!" class="button" data-modal-open="learn-more">Learn more</a>
           </div>
         </div>
       </section>
@@ -163,7 +207,7 @@
               <p>Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
                 <span class="circle guide__circle"></span>
             </div>
-            <a href="#" class="button">Download</a>
+            <a href="#!" class="button" data-modal-open="learn-more">Learn more</a>
           </div>
           <div class="guide__image">
             <img src="./img/guide/guide-img.png" alt="Guides by Thousand 
@@ -305,7 +349,7 @@
           </div>
         </div>
       </section>
-    </main>
+    </section>
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__row">
@@ -404,8 +448,19 @@
         </div>
       </div>
     </footer>
-  </section>  
-  
+  </main>  
+  <!-- modal learn more -->
+  <div class="modal" data-modal="learn-more">
+    <div class="modal__bg">
+      <form action="#!" class="modal-form">
+        <h2 class="modal-form__title">A new way to explore the world</h2>
+        <p>For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+        <div class="modal-form__close">
+          <img src="./img/close.svg" alt="close">
+        </div>
+      </form>
+    </div>
+  </div>
   <script src="./js/swiper.js"></script>
   <script src="./js/main.js"></script>
 </body>
